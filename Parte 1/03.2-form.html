@@ -1,0 +1,38 @@
+<style>
+    form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 25vw;
+}
+
+input, label {
+  width: 10vmin, 30vmax;
+}
+</style>
+
+<h1>Iscriviti alla newsletter!</h1>
+<form action="https://www.fabiovitali.it/TW/DHDK/doResponse.php" method="post">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="cognome">Cognome:</label>
+    <input type="text" id="cognome" name="cognome" required>
+
+    <label for="email">email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="frequenza">Frequenza:</label>
+    <select id="frequenza" name="frequenza">
+        <option value="quotidianamente">Ogni giorno</option>
+        <option value="settimanalmente">Una volta a settimana</option>
+        <option value="mensilmente">Una volta al mese</option>
+    </select>
+
+    <div>
+        <input type="checkbox" id="trattamento-dati" name="trattamento-dati" required>
+        <label for="trattamento-dati">Accetto il trattamento dei dati personali</label>
+    </div>
+
+    <button type="submit">Iscriviti</button>
+</form>
